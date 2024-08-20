@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center; */
+            align-items: center;
+            gap: 50px;
+            background: linear-gradient(90deg,rgb(0, 0, 0),rgb(64, 64, 64),rgb(0, 0, 0));
+            height: 100vh;
+        }
+        .search{
+            display: flex;
+            gap: 20px;
+        }
+        #searchField{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 5px;
+            border: 2px solid rgb(152, 152, 152);
+        }
+        #button{
+            height:40px;
+            width: 100px;
+            border-radius: 15px;
+            border: 0;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(52, 52, 250);
+        }
+        #button:hover{
+            cursor: pointer;
+            background-color: rgb(67, 67, 249);
+        }
+        #container{
+            margin-left: 60px;
+            width: 88%;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 60px;
+        }
+        #imgDiv{
+            height: 270px;
+            width: 300px;
+            border: 1px solid rgb(160, 160, 160);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+        }
+        .shownImg{
+            height: 220px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .shownImg:hover{
+            scale: 1.05;
+        }
+        p{
+            font-weight: 600;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-top: 60px; color: white;">Image Search App</h1>
+    <div class="search">
+        <input type="text" id="searchField" placeholder="//Search">
+        <button id="button">Search</button>
+    </div>
+    <div id="container">
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
